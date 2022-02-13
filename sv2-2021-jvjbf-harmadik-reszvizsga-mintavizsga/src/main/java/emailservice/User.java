@@ -7,8 +7,8 @@ import java.util.List;
 public class User {
 
     private String emailAddress;
-    private List<Email> incoming = new LinkedList<>();
-    private List<Email> sent = new ArrayList<>();
+    private List<Email> incoming = new LinkedList<>(); //bejövő
+    private List<Email> sent = new ArrayList<>(); //elküldött, címzett
     private boolean spamFilter;
 
     public User(String emailAddress) {
@@ -55,5 +55,13 @@ public class User {
 
     public boolean hasSpamFilter() {
         return spamFilter;
+    }
+
+    @Override
+    public String toString() {
+        return emailAddress +
+                ", incoming=" + incoming +
+                ", sent=" + sent +
+                ", spamFilter=" + spamFilter;
     }
 }

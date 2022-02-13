@@ -67,5 +67,4 @@ class EmailServiceTest {
             assertEquals(1,user.getIncoming().size());
         }
     }
-
 }
