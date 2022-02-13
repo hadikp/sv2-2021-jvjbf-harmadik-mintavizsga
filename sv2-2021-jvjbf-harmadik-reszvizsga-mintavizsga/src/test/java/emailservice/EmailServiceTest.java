@@ -18,6 +18,7 @@ class EmailServiceTest {
         emailService.registerUser("jackdoe@gmail.com");
         emailService.registerUser("jilldoe@gmail.com");
         emailService.registerUser("jamesdoe@gmail.com");
+
     }
 
 
